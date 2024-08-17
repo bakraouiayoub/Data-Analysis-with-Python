@@ -5,7 +5,7 @@ from pandas.plotting import register_matplotlib_converters
 register_matplotlib_converters()
 
 # Importing data 
-data_path='C:/Users/bakra/Myprojects/Page View Time Series/fcc-forum-pageviews.csv'
+data_path='fcc-forum-pageviews.csv'
 df = pd.read_csv(data_path,index_col=0,parse_dates=True)
 
 # Cleaning Data: Keeping only the records with page views between the 2.5th and 97.5th percentiles
